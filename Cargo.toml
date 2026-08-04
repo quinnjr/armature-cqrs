@@ -1,6 +1,6 @@
 [package]
 name = "armature-cqrs"
-version = "0.1.1"
+version = "0.1.2"
 edition = "2024"
 rust-version = "1.94.1"
 authors = ["Joseph Quinn <quinn.josephr@proton.me>"]
@@ -12,8 +12,8 @@ keywords = ["cqrs", "command", "query", "event-sourcing"]
 categories = ["web-programming", "data-structures"]
 
 [dependencies]
-armature-events = { version = "0" }
-armature-eventsourcing = { version = "0" }
+armature-events = { version = "0.3" }
+armature-eventsourcing = { version = "0.3" }
 tokio = { version = "1.52", features = ["rt", "rt-multi-thread", "macros", "sync", "time"] }
 async-trait = "0.1"
 serde = { version = "1.0", features = ["derive"] }
