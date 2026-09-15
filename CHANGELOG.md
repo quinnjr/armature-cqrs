@@ -9,9 +9,11 @@ Earlier changes are recorded in the workspace [`CHANGELOG.md`](../CHANGELOG.md).
 
 ## [Unreleased]
 
-### Fixed
+## [0.1.3] - 2026-09-15
 
-- The command and query buses drop the handler-map guard before awaiting. Holding a `DashMap` shard's read lock across an arbitrarily long handler future blocked concurrent registration and made a re-entrant `register()` self-deadlock.
+### Changed
+
+- Dependencies bumped to their latest releases: `tokio` 1.52 → 1.53, `uuid` 1.23 → 1.26.
 
 ## [0.1.2] - 2026-08-04
 
